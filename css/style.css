@@ -1,0 +1,49 @@
+main {
+width: 90%;
+margin:auto;
+
+}
+
+.profile {
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.profile-img {
+    width:75%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.profile h2 {
+    column-span: all;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .short-bio {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
