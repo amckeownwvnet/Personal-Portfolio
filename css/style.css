@@ -1,7 +1,11 @@
+html {
+  background-color:antiquewhite;
+}
+
 main {
 width: 90%;
 margin:auto;
-
+font-family: "Lato", sans-serif;
 }
 
 .profile {
@@ -11,17 +15,42 @@ margin:auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
     
 }
 
 .profile-img {
     width:75%;
     border-radius: 50%;
-    padding: 5px;
+    margin: 5%;
+    border: 5px solid #3C415C;
 }
 
 .profile h2 {
     column-span: all;
+    font-size: 2em;
+}
+
+.profile-subtitle{
+  padding-top: 5px;
+  font-size: 1.1em;
+}
+.profile-tags {
+  font-size: 1.3em;
+}
+
+.social-title{
+  text-align: center;
+  margin:auto;
+  padding-top: 10px;
+  color: black;
+}
+
+.navbox{
+  display:flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border-bottom: 2px solid #5D3587;
 }
 
 .social-links {
@@ -33,29 +62,38 @@ margin:auto;
   padding-bottom: 10px;
 }
 
+.social-links img{
+  width:75%;
+
+}
+
 .collapsible {
-    background-color:#5dbea3;
+    background-color:#3C415C;
     color: white;
     cursor: pointer;
     padding: 18px;
     width: 50%;
-    border: none;
+    border: 1px solid grey;
     border-radius: 25px;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
   }
 
   .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: #5D3587;
   }
 
   .short-bio {
-    padding: 0 18px;
+    padding: 10px 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: white;
+    border-radius:10px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px lightblue;
+    font-size: 1.1em;
   }
 
   .portfolio-grid {
@@ -65,5 +103,70 @@ margin:auto;
     align-items: center;
     text-align: center;
     margin:auto;
+    color: black;
+  }
+
+  .portfolio-title {
+    text-align: center;
+    margin-top: 1em;
+    color: black;
+  }
+
+  .portfolio-card{
+    border: 1px solid grey;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin-top:10px;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 5px 5px lightblue;
+  }
+
+  .card-thumbnail{
+    border-radius: 20px;
+    width: 90%;
   }
   
+  .footer{
+    text-align: center;
+    color: black;
+  }
+
+  .easteregg {
+    color:antiquewhite;
+  }
+
+  @media (min-width: 768px) {
+    .portfolio-grid{
+      display:flex;
+      flex-direction: row;
+      flex-flow:wrap;
+    }
+    
+    .portfolio-card{
+      width: 40%;
+      margin:.5em;
+      min-height: 548px;
+      
+      
+    }
+    .profile-img{
+      width:25%;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    .profile h2 {
+      margin-top:2em;
+      margin-bottom: 0;
+    }
+
+    .short-bio {
+      font-size: 1.5em;
+      padding: 20px;
+    }
+
+    .navbox{
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+  }
