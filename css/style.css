@@ -8,6 +8,22 @@ margin:auto;
 font-family: "Lato", sans-serif;
 }
 
+.whydoineedthis {
+  text-align:center;
+  font-size: 1.1em;
+  border: 2px solid black;
+  border-radius: 25px;
+  width:30%;
+  margin:auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.whydoineedthis a{
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
 .profile {
     margin:auto;
     display:flex;
